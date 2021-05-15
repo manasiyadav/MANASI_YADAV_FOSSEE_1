@@ -1,0 +1,79 @@
+.HEA
+.TIM 05/15/21 16:51:24
+.APP "Eeschema 4.0.7"
+
+.ADD_COM     U1     "priencoder"
+.ADD_COM     U2     "adc_bridge_4"
+.ADD_COM     U3     "dac_bridge_3"
+.ADD_COM     R7     "100k"
+.ADD_COM     R4     "100k"
+.ADD_COM     v4     "pulse"
+.ADD_COM     R3     "100k"
+.ADD_COM     v3     "pulse"
+.ADD_COM     R2     "100k"
+.ADD_COM     v2     "pulse"
+.ADD_COM     R1     "100k"
+.ADD_COM     v1     "pulse"
+.ADD_COM     R5     "100k"
+.ADD_COM     R6     "100k"
+
+
+.ADD_TER   U2   8     "Net-(U1-Pad4)"
+.TER       U1   4
+
+.ADD_TER   U2   7     "Net-(U1-Pad3)"
+.TER       U1   3
+
+.ADD_TER   U2   6     "Net-(U1-Pad2)"
+.TER       U1   2
+
+.ADD_TER   U2   5     "Net-(U1-Pad1)"
+.TER       U1   1
+
+.ADD_TER   U3   1     "Net-(U1-Pad5)"
+.TER       U1   5
+
+.ADD_TER   R7   1     "Net-(R1-Pad1)"
+.TER       R4   1
+            R6   1
+            R5   1
+            v1   2
+            R1   1
+            v2   2
+            R2   1
+            v3   2
+            R3   1
+            v4   2
+
+.ADD_TER   R3   2     "Net-(R3-Pad2)"
+.TER       U2   3
+            v3   1
+
+.ADD_TER   v1   1     "Net-(R1-Pad2)"
+.TER       R1   2
+            U2   1
+
+.ADD_TER   R6   2     "Net-(R6-Pad2)"
+.TER       U3   5
+
+.ADD_TER   R7   2     "Net-(R7-Pad2)"
+.TER       U3   4
+
+.ADD_TER   U3   6     "Net-(R5-Pad2)"
+.TER       R5   2
+
+.ADD_TER   U3   2     "Net-(U1-Pad6)"
+.TER       U1   6
+
+.ADD_TER   U1   7     "Net-(U1-Pad7)"
+.TER       U3   3
+
+.ADD_TER   R4   2     "Net-(R4-Pad2)"
+.TER       U2   4
+            v4   1
+
+.ADD_TER   v2   1     "Net-(R2-Pad2)"
+.TER       R2   2
+            U2   2
+
+.END
